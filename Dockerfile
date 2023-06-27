@@ -61,4 +61,4 @@ VOLUME ["/code/yuan_net_tr/media/images/"]
 ENTRYPOINT ["/code/docker-entrypoint.sh"]
 
 # Start uWSGI
-CMD ["/venv/bin/uwsgi", "/code/etc/uwsgi.ini"]
+CMD ["uwsgi", "/code/etc/uwsgi.ini"]

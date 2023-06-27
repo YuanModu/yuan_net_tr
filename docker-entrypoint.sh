@@ -8,7 +8,7 @@ set -e
 
 # >&2 echo "Postgres is up - continuing"
 
-if [ "$1" = '/venv/bin/uwsgi' ]; then
+if [ "$1" = 'uwsgi' ]; then
     /venv/bin/python manage.py migrate --noinput
 fi
 
